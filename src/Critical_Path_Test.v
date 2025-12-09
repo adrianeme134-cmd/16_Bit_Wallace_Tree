@@ -26,6 +26,6 @@ module Critical_Path_Test(
    end
    
     // Multiply A X B
-    Wallace_Tree_Multiplier test(.A(A),.B(B),.sum(wallace_out));
+    (* DONT_TOUCH = "true" *) Wallace_Tree_Multiplier test(.A(A),.B(B),.sum(wallace_out));
     
 endmodule
